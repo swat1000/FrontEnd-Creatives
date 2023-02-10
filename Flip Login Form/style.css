@@ -75,12 +75,12 @@ body {
 }
 
 .form-wrapper.is-active .switcher-login {
-	color: #a11212;
+	color: #1214a1;
 	transform: translateX(90px);
 }
 
 .form-wrapper.is-active .switcher-signup {
-	color: #110a4b;
+	color: #938cd6;
 	transform: translateX(-90px);
 }
 
@@ -279,7 +279,7 @@ body {
 
 .btn-signup {
 	color: #a7e245;
-	background: #fbfdff;
+	background: #1d4872;
 	box-shadow: inset 0 0 0 2px #5545e2;
 	transform: translateX(30%);
 }
