@@ -1,15 +1,21 @@
-const images = document.querySelectorAll("img");
+var images = document.getElementsByTagName('img');
+var i = 0;
 
-let i = 0;
 
-setInterval(function(){
-   
- images.forEach( (img, i) => {
-    img.style.display = 'none';
-  })
+setInterval(function(){ 
 
-  images[i].style.display = 'block';
-  i++;
-
-}, 2000);
+  if(i == 0) {
+    images[i].style.display = 'block';
+  } else if(i == images.length ) {
+    images[i - 1].style.display = 'none';
+    images[0].style.display = 'block';
+    i = 0;
+  } else {
+    images[i - 1].style.display = 'none';
+    images[i].style.display = 'block';
+  }
   
+ i++;
+ 
+}, 2000);
+
